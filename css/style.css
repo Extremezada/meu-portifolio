@@ -33,7 +33,7 @@ img{
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
-    color: purple;
+    color: whitesmoke;
 }
 .languages-info{
     display: flex;
@@ -60,6 +60,12 @@ img{
     align-items: center;
     gap: 24px;
 }
+.socials a{
+    transition: transform 0.2s;
+}
+.socials a:hover{
+    transform: scale(1.5);
+}
 .socials img{
     width: 20px;
     height: 20px;
@@ -67,9 +73,15 @@ img{
     border: 1px solid white;
     border-radius: 20px;
 }
+.btn-contact:hover{
+    transform: scale(1.3);
+}
+.btn-contact{
+    transition: transform 0.2s;
+}
 .btn-contact{
     border-radius: 24px;
-    background: linear-gradient(90deg, #777CF4 2.62%, #F47777 93.38%);
+    background: linear-gradient(90deg, rgba(115,9,49,0.7357317927170868) 20%, rgba(72,9,121,0.8645833333333334) 100%);
     width: 325px;
     padding: 12px;
     text-align: center;
@@ -102,7 +114,7 @@ img{
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
-    color: purple;
+    color: whitesmoke;
     align-items: center;
 }
 .experience p{
@@ -110,6 +122,13 @@ img{
     font-size: 18px;
     line-height: 28px;
     color: #797575;
+}
+.experience-meansure{
+    animation: fadeIn 3s linear;
+}
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
 .header{
     display: flex;
@@ -122,7 +141,7 @@ img{
        font-weight: 600;
        font-size: 28px;
        line-height: 46px;  
-       color: purple;
+       color: whitesmoke
 }
 .header h2{
         font-style: italic;
@@ -131,7 +150,58 @@ img{
         line-height: 30px;
         color: #797575;
 }
+.experience-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.experience-time img{
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+}
+.experience-language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.experience-unit{
+    width: 300px;
+    height: 30px;
+    border-radius: 24px;
+    border: 1px solid whitesmoke;
+}
+.experience-meansure{
+    height: 30px;
+    border-radius: 24px;
+    width: 50%;
+    border: linear-gradient(90deg, #777CF4 2.62%, #F47777 93.38%);;
+    background: linear-gradient(90deg, rgba(115,9,49,0.7357317927170868) 20%, rgba(72,9,121,0.8645833333333334) 100%);
 
+    color: whitesmoke;
+    font-weight: 300;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.html{
+    width: 100%;
+}
+
+@media (max-width: 419px){
+    .header img{
+        display: none;
+    }
+}
+@media (min-width: 720px){
+    .experience-unit{
+        width: 600px;
+    }
+}
 
 @media (min-width: 950px){
     .infos{
