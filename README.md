@@ -4,8 +4,7 @@ No projeto ela utiliza algumas tecnologias como Typescript, React e Sass mas com
 optei por usar apenas o CSS na parte de estilização.
 
 # Aqui está o link da live:
-https://www.youtube.com/watch?v=1tp7LMp0V28
-
+https://youtu.be/1tp7LMp0V28
 # E o repositório no Github:
 https://github.com/Fernanda-Kipper/portfolio-project
 
