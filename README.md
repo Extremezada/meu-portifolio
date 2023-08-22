@@ -7,5 +7,6 @@ optei por usar apenas o CSS na parte de estilização.
 https://youtu.be/1tp7LMp0V28
 # E o repositório no Github:
 https://github.com/Fernanda-Kipper/portfolio-project
-
+# Link do projeto:
+https://extremezada.github.io/meu-portifolio/
 É um dos projetos que quero criar do zero mais pra frente.
