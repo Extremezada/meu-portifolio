@@ -2,12 +2,32 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
+    margin: 0px;
     background-color: #2c2c2c;
 }
-img{
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(90deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+.animationRotate {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate 2s ease-out infinite reverse;
+}
+.header img{
     width: 325px;
     height: 277;
     border-radius: 24px;
+    border: 3px solid whitesmoke;
 }
 .container{
     padding: 40px 32px;
@@ -20,6 +40,10 @@ img{
     "info";
     gap: 24px;
 }
+.education-info{
+    align-self: center;
+    max-width: 342px;
+}
 .infos{
     display: flex;
     flex-direction: column;
@@ -28,6 +52,11 @@ img{
     gap: 24px;
     width: 100%;
 }
+.infos span{
+    padding-left: 0;
+    align-self: center;
+}
+
 .infos h3{
     align-self: center;
     font-weight: 500;
@@ -122,6 +151,8 @@ img{
     font-size: 18px;
     line-height: 28px;
     color: #797575;
+    max-width: 342px;
+    
 }
 .experience-meansure{
     animation: fadeIn 3s linear;
@@ -136,6 +167,9 @@ img{
     grid-area: header;
     gap: 24px;
     align-items: center;
+}
+.header div{
+    max-width: 342px;
 }
 .header h1{
        font-weight: 600;
@@ -192,18 +226,27 @@ img{
     width: 100%;
 }
 
-@media (max-width: 419px){
-    .header img{
-        display: none;
-    }
-}
-@media (min-width: 720px){
+@media (min-width: 750px){
     .experience-unit{
         width: 600px;
     }
+    .experience p{
+        max-width: 642px;
+    }
 }
 
-@media (min-width: 950px){
+@media (min-width: 1008px){
+    .education-info{
+        align-self: flex-start;
+        max-width: 280px;
+    }
+    .header div{
+        max-width: 220px;
+    }
+    .infos span{
+        padding-left: 0;
+        align-self: flex-start;
+    }
     .infos{
         align-items: flex-start;
     }
@@ -214,8 +257,12 @@ img{
         font-size: 24px;
         line-height: 36px;
     }
+    .experience p{
+        max-width: 642px;
+    }
     .container{
-        padding: 70px 60px;
+        max-height: 100%;
+        padding: 0px 30px 0px 30px;
         height: 100vh;
         grid-template-rows: fit-content(100%);
         grid-template-columns: 60% 30%;
@@ -230,7 +277,8 @@ img{
     .header{
         flex-direction: row-reverse;
         align-items: center;
-    }  
+    }
+   
     .header h1{
             font-size: 36px;
             line-height: 54px;  
@@ -242,6 +290,29 @@ img{
     }
     .header img{
             border-radius: 100%;
-            border: 5px solid rgb(0, 0, 0);
+            border: 3px solid whitesmoke;
+    }
+}
+
+@media (min-width: 1158px) {
+    .header div{
+        max-width: 220px;
+    }
+}
+@media (min-width: 1275px) {
+    .header div{
+        max-width: 400px;
+    }
+    .header{
+        margin-top: 20px;
+    }
+}
+@media (min-width: 1600px) {
+    .education-info{
+        max-width: 400px;
+    }
+}@media (min-width: 1920px) {
+    .education-info{
+        max-width: 550px;
     }
 }
