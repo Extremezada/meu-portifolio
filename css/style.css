@@ -125,6 +125,7 @@ body{
     justify-content: center;
     gap: 8px;
     font-weight: 500;
+    border: 2px solid whitesmoke;
 }
 .btn-contact img{
     width: 20px;
