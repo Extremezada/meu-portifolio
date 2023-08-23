@@ -88,9 +88,14 @@ body{
     display: flex;
     align-items: center;
     gap: 24px;
+    
 }
 .socials a{
     transition: transform 1000ms;
+    
+}
+.socials img{
+    box-shadow: 5px 7px 7px black;
 }
 .socials a:hover,
 .socials a:focus-visible{
@@ -128,6 +133,7 @@ body{
     gap: 8px;
     font-weight: 500;
     border: 2px solid whitesmoke;
+    box-shadow: 5px 7px 7px black;
 
     transition: transform 1000ms;
     cursor: pointer;
