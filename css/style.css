@@ -90,10 +90,12 @@ body{
     gap: 24px;
 }
 .socials a{
-    transition: transform 0.2s;
+    transition: transform 1000ms;
 }
-.socials a:hover{
-    transform: scale(1.5);
+.socials a:hover,
+.socials a:focus-visible{
+    transform: translateY(-1.75rem);
+    transition: transform 250ms;
 }
 .socials img{
     width: 20px;
@@ -101,12 +103,12 @@ body{
     padding: 20px;
     border: 1px solid white;
     border-radius: 20px;
+    
 }
-.btn-contact:hover{
-    transform: scale(1.3);
-}
-.btn-contact{
-    transition: transform 0.2s;
+.btn-contact:hover,
+.btn-contact:focus-visible{
+    transform: translateY(-1.75rem);
+    transition: transform 250ms;
 }
 .btn-contact{
     border-radius: 24px;
@@ -126,6 +128,9 @@ body{
     gap: 8px;
     font-weight: 500;
     border: 2px solid whitesmoke;
+
+    transition: transform 1000ms;
+    cursor: pointer;
 }
 .btn-contact img{
     width: 20px;
@@ -156,7 +161,7 @@ body{
     
 }
 .experience-meansure{
-    animation: fadeIn 3s linear;
+    animation: fadeIn 5s alternate;
 }
 @keyframes fadeIn {
     from{opacity: 0;}
